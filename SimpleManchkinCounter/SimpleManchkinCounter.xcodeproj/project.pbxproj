@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8CC815205C727700B0D2AD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC814205C727700B0D2AD /* Player.swift */; };
+		0F8CC817205C72EA00B0D2AD /* Manchkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC816205C72EA00B0D2AD /* Manchkin.swift */; };
+		0F8CC819205C72FD00B0D2AD /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC818205C72FD00B0D2AD /* Monster.swift */; };
+		0F8CC81C205C733B00B0D2AD /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC81B205C733B00B0D2AD /* PlayerManager.swift */; };
 		DADE2D08205B32E9009E94E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE2D07205B32E9009E94E7 /* AppDelegate.swift */; };
 		DADE2D0A205B32E9009E94E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE2D09205B32E9009E94E7 /* ViewController.swift */; };
 		DADE2D0D205B32E9009E94E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE2D0B205B32E9009E94E7 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F8CC814205C727700B0D2AD /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0F8CC816205C72EA00B0D2AD /* Manchkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manchkin.swift; sourceTree = "<group>"; };
+		0F8CC818205C72FD00B0D2AD /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		0F8CC81B205C733B00B0D2AD /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		DADE2D04205B32E9009E94E7 /* SimpleManchkinCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleManchkinCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE2D07205B32E9009E94E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADE2D09205B32E9009E94E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8CC80C205C6DD800B0D2AD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DADE2D16205B32E9009E94E7 /* Info.plist */,
+				DADE2D13205B32E9009E94E7 /* LaunchScreen.storyboard */,
+				DADE2D07205B32E9009E94E7 /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0F8CC80D205C6E0400B0D2AD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DADE2D0E205B32E9009E94E7 /* SimpleManchkinCounter.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0F8CC80E205C6E2300B0D2AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F8CC814205C727700B0D2AD /* Player.swift */,
+				0F8CC816205C72EA00B0D2AD /* Manchkin.swift */,
+				0F8CC818205C72FD00B0D2AD /* Monster.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F8CC81A205C731500B0D2AD /* PlayerManager */ = {
+			isa = PBXGroup;
+			children = (
+				0F8CC81B205C733B00B0D2AD /* PlayerManager.swift */,
+			);
+			path = PlayerManager;
+			sourceTree = "<group>";
+		};
 		DADE2CFB205B32E8009E94E7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +100,13 @@
 		DADE2D06205B32E9009E94E7 /* SimpleManchkinCounter */ = {
 			isa = PBXGroup;
 			children = (
-				DADE2D07205B32E9009E94E7 /* AppDelegate.swift */,
+				0F8CC81A205C731500B0D2AD /* PlayerManager */,
+				0F8CC80E205C6E2300B0D2AD /* Models */,
+				0F8CC80D205C6E0400B0D2AD /* CoreData */,
+				0F8CC80C205C6DD800B0D2AD /* Support */,
 				DADE2D09205B32E9009E94E7 /* ViewController.swift */,
 				DADE2D0B205B32E9009E94E7 /* Main.storyboard */,
 				DADE2D11205B32E9009E94E7 /* Assets.xcassets */,
-				DADE2D13205B32E9009E94E7 /* LaunchScreen.storyboard */,
-				DADE2D16205B32E9009E94E7 /* Info.plist */,
-				DADE2D0E205B32E9009E94E7 /* SimpleManchkinCounter.xcdatamodeld */,
 			);
 			path = SimpleManchkinCounter;
 			sourceTree = "<group>";
@@ -139,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8CC817205C72EA00B0D2AD /* Manchkin.swift in Sources */,
+				0F8CC819205C72FD00B0D2AD /* Monster.swift in Sources */,
 				DADE2D0A205B32E9009E94E7 /* ViewController.swift in Sources */,
 				DADE2D08205B32E9009E94E7 /* AppDelegate.swift in Sources */,
+				0F8CC815205C727700B0D2AD /* Player.swift in Sources */,
+				0F8CC81C205C733B00B0D2AD /* PlayerManager.swift in Sources */,
 				DADE2D10205B32E9009E94E7 /* SimpleManchkinCounter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
