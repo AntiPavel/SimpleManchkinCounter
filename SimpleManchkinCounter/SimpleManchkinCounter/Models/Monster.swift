@@ -43,8 +43,8 @@ final class Monster: Player {
         return bonus + level
     }
     
-    func isCoursed() -> Bool {
-        return isCoursedNow
+    func isCursed() -> Bool {
+        return isCursedNow
     }
     
     func getId() -> Int {
@@ -54,6 +54,6 @@ final class Monster: Player {
     private let id: Int
     private var level: Int = 0
     private let bonus: Int = 0
-    private let isCoursedNow: Bool = false
+    private let isCursedNow: Bool = false
     private var storedName: String = "Monstr"
 }

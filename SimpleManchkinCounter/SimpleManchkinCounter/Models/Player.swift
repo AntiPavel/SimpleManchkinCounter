@@ -21,5 +21,5 @@ protocol  Player {
     func decreaseBonus()
     func setCourse(coursed: Bool)
     func getStreight() -> Int
-    func isCoursed() -> Bool
+    func isCursed() -> Bool
 }
