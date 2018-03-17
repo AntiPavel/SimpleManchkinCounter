@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Start Screen View Controller-->
         <scene sceneID="xfx-0k-HB0">
             <objects>
-                <viewController id="AMr-vH-0wd" sceneMemberID="viewController">
+                <viewController restorationIdentifier="StartScreenViewController" storyboardIdentifier="StartScreenViewController" id="AMr-vH-0wd" customClass="StartScreenViewController" customModule="SimpleManchkinCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iL6-cQ-k7C"/>
                         <viewControllerLayoutGuide type="bottom" id="HvV-wP-Kiw"/>
@@ -29,7 +29,22 @@
                     <view key="view" contentMode="scaleToFill" id="YVA-F8-I1p">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM3-pw-jfx">
+                                <rect key="frame" x="279" y="172" width="109" height="30"/>
+                                <state key="normal" title="Start new game">
+                                    <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNewGameAction:" destination="AMr-vH-0wd" eventType="touchUpInside" id="qgV-0c-f7t"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mM3-pw-jfx" firstAttribute="centerY" secondItem="YVA-F8-I1p" secondAttribute="centerY" id="RrL-W2-5iK"/>
+                            <constraint firstItem="mM3-pw-jfx" firstAttribute="centerX" secondItem="YVA-F8-I1p" secondAttribute="centerX" id="Ykt-M6-WD4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="67Z-Wa-z3f"/>
                     <connections>
@@ -38,12 +53,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLT-cf-wHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="358" y="-572"/>
+            <point key="canvasLocation" x="357.57121439280365" y="-572"/>
         </scene>
-        <!--View Controller-->
+        <!--Players Main Screen View Controller-->
         <scene sceneID="C6W-G4-kQf">
             <objects>
-                <viewController id="Ubf-1f-nQv" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PlayersMainScreenViewController" storyboardIdentifier="PlayersMainScreenViewController" id="Ubf-1f-nQv" customClass="PlayersMainScreenViewController" customModule="SimpleManchkinCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M8C-IP-u12"/>
                         <viewControllerLayoutGuide type="bottom" id="AgF-hb-TH5"/>
@@ -56,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wKc-0b-Y1b">
-                                <rect key="frame" x="0.0" y="0.0" width="597" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="607" height="375"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jb2-GZ-fzY">
@@ -76,20 +91,38 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP6-ql-zIf">
+                                <rect key="frame" x="622" y="30" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8KI-QQ-cQ1"/>
+                                    <constraint firstAttribute="width" constant="35" id="9Pp-ga-Kvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.68514097920000006" green="0.17979647439999999" blue="0.98560535910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="Ubf-1f-nQv" eventType="touchUpInside" id="CVu-E9-28i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="wKc-0b-Y1b" secondAttribute="trailing" constant="70" id="0VZ-i7-MqC"/>
+                            <constraint firstItem="xP6-ql-zIf" firstAttribute="leading" secondItem="wKc-0b-Y1b" secondAttribute="trailing" constant="15" id="EXz-DG-yE0"/>
                             <constraint firstItem="CLX-4f-lx0" firstAttribute="leading" secondItem="s5U-l8-sN1" secondAttribute="leading" id="Evs-if-uqA"/>
                             <constraint firstAttribute="trailing" secondItem="CLX-4f-lx0" secondAttribute="trailing" id="I3w-9D-pe3"/>
                             <constraint firstItem="wKc-0b-Y1b" firstAttribute="top" secondItem="M8C-IP-u12" secondAttribute="bottom" id="J3A-cw-hPl"/>
                             <constraint firstItem="wKc-0b-Y1b" firstAttribute="leading" secondItem="s5U-l8-sN1" secondAttribute="leading" id="NgA-5V-d1T"/>
+                            <constraint firstAttribute="trailing" secondItem="xP6-ql-zIf" secondAttribute="trailing" constant="10" id="PZW-tf-phx"/>
                             <constraint firstItem="AgF-hb-TH5" firstAttribute="top" secondItem="wKc-0b-Y1b" secondAttribute="bottom" id="VAF-6G-fe8"/>
+                            <constraint firstItem="xP6-ql-zIf" firstAttribute="top" secondItem="M8C-IP-u12" secondAttribute="bottom" constant="30" id="fJP-dx-dq6"/>
                             <constraint firstItem="AgF-hb-TH5" firstAttribute="top" secondItem="CLX-4f-lx0" secondAttribute="bottom" id="fcp-SJ-7Xu"/>
                             <constraint firstItem="CLX-4f-lx0" firstAttribute="top" secondItem="M8C-IP-u12" secondAttribute="bottom" id="zuf-mT-ert"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="xP6-ql-zIf" id="vxM-rd-hq2"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showFightScreen" id="yt6-FE-SEm"/>
                     </connections>
                 </viewController>
@@ -97,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="357.57121439280365" y="272.80000000000001"/>
         </scene>
-        <!--View Controller-->
+        <!--Fight View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleManchkinCounter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FightViewController" storyboardIdentifier="FightViewController" id="BYZ-38-t0r" customClass="FightViewController" customModule="SimpleManchkinCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

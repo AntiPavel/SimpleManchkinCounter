@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FightViewController.swift
 //  SimpleManchkinCounter
 //
 //  Created by paul on 15/03/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FightViewController: UIViewController, TransitionHandler {
 
     @IBOutlet weak var playersStrenghtLabel: UILabel!
     @IBOutlet weak var monstersStrenghtLabel: UILabel!
@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var winButton: UIButton!
     @IBAction func winButtonAction(_ sender: Any) {
-        
+            let moduleId = ModuleId(storyboardId: Storyboard.Main.storyboardName,
+                                    controllerId: Storyboard.Main.startScreenViewController.rawValue,
+                                    transitionType: .pop)
+            self.openModule(with: moduleId) { _ in }
     }
     
     override func viewDidLoad() {

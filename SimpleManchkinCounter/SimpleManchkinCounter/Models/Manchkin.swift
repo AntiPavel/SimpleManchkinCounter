@@ -39,15 +39,15 @@ final class Manchkin: Player {
     }
     
     func setCourse(coursed: Bool) {
-        isCoursedNow = coursed
+        isCursedNow = coursed
     }
     
     func getStreight() -> Int {
         return streight + level
     }
     
-    func isCoursed() -> Bool {
-        return isCoursedNow
+    func isCursed() -> Bool {
+        return isCursedNow
     }
     
     func getId() -> Int {
@@ -58,6 +58,6 @@ final class Manchkin: Player {
     private var streight: Int = 0
     private var level: Int = 0
     private var bonus: Int = 0
-    private var isCoursedNow: Bool = false
+    private var isCursedNow: Bool = false
     private var storedName: String = "Player"
 }
