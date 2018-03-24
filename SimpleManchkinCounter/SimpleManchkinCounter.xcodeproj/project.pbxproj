@@ -69,14 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8CC80C205C6DD800B0D2AD /* Support */ = {
+		0F8CC80C205C6DD800B0D2AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				DADE2D16205B32E9009E94E7 /* Info.plist */,
 				DADE2D13205B32E9009E94E7 /* LaunchScreen.storyboard */,
 				DADE2D07205B32E9009E94E7 /* AppDelegate.swift */,
 			);
-			path = Support;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		0F8CC80D205C6E0400B0D2AD /* CoreData */ = {
@@ -196,7 +196,7 @@
 				0F8CC81A205C731500B0D2AD /* PlayerManager */,
 				0F8CC80E205C6E2300B0D2AD /* Models */,
 				0F8CC80D205C6E0400B0D2AD /* CoreData */,
-				0F8CC80C205C6DD800B0D2AD /* Support */,
+				0F8CC80C205C6DD800B0D2AD /* Resources */,
 				DADE2D0B205B32E9009E94E7 /* Main.storyboard */,
 				DADE2D11205B32E9009E94E7 /* Assets.xcassets */,
 			);
