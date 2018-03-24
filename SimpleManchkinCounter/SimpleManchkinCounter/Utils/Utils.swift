@@ -14,3 +14,10 @@ public func delay(_ delay: Double, closure: @escaping () -> ()) {
     }
 }
 
+//private extension UIView
+//{
+//    func copyView<T: UIView>() -> T {
+//        return NSKeyedUnarchiver.unarchiveObject(with: NSKeyedArchiver.archivedData(withRootObject: self)) as! T
+//    }
+//}
+

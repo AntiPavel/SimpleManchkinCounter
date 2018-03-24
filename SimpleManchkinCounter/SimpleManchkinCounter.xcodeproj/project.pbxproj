@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6179AC2065795800F87671 /* FlipStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6179AB2065795800F87671 /* FlipStepper.swift */; };
+		0F6179AE206663C600F87671 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6179AD206663C600F87671 /* Promise.swift */; };
 		0F8CC815205C727700B0D2AD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC814205C727700B0D2AD /* Player.swift */; };
 		0F8CC817205C72EA00B0D2AD /* Manchkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC816205C72EA00B0D2AD /* Manchkin.swift */; };
 		0F8CC819205C72FD00B0D2AD /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC818205C72FD00B0D2AD /* Monster.swift */; };
@@ -19,6 +21,8 @@
 		0F8CC82D205D19C000B0D2AD /* PlayersMainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC82C205D19C000B0D2AD /* PlayersMainScreenViewController.swift */; };
 		0F8CC832205D1CBD00B0D2AD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC831205D1CBD00B0D2AD /* Utils.swift */; };
 		0F8CC834205D256000B0D2AD /* UINavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC833205D256000B0D2AD /* UINavigationExtension.swift */; };
+		0F8CC838205D3B4300B0D2AD /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC836205D3B4300B0D2AD /* PlayerCollectionViewCell.swift */; };
+		0F8CC839205D3B4300B0D2AD /* PlayerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8CC837205D3B4300B0D2AD /* PlayerCollectionViewCell.xib */; };
 		DADE2D08205B32E9009E94E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE2D07205B32E9009E94E7 /* AppDelegate.swift */; };
 		DADE2D0A205B32E9009E94E7 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADE2D09205B32E9009E94E7 /* FightViewController.swift */; };
 		DADE2D0D205B32E9009E94E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADE2D0B205B32E9009E94E7 /* Main.storyboard */; };
@@ -28,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6179AB2065795800F87671 /* FlipStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlipStepper.swift; path = SimpleManchkinCounter/Models/FlipStepper.swift; sourceTree = SOURCE_ROOT; };
+		0F6179AD206663C600F87671 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		0F8CC814205C727700B0D2AD /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0F8CC816205C72EA00B0D2AD /* Manchkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manchkin.swift; sourceTree = "<group>"; };
 		0F8CC818205C72FD00B0D2AD /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		0F8CC82C205D19C000B0D2AD /* PlayersMainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersMainScreenViewController.swift; sourceTree = "<group>"; };
 		0F8CC831205D1CBD00B0D2AD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0F8CC833205D256000B0D2AD /* UINavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationExtension.swift; sourceTree = "<group>"; };
+		0F8CC836205D3B4300B0D2AD /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F8CC837205D3B4300B0D2AD /* PlayerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCollectionViewCell.xib; sourceTree = "<group>"; };
 		DADE2D04205B32E9009E94E7 /* SimpleManchkinCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleManchkinCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADE2D07205B32E9009E94E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADE2D09205B32E9009E94E7 /* FightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,8 @@
 		0F8CC80E205C6E2300B0D2AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0F6179AB2065795800F87671 /* FlipStepper.swift */,
+				0F6179AD206663C600F87671 /* Promise.swift */,
 				0F8CC814205C727700B0D2AD /* Player.swift */,
 				0F8CC816205C72EA00B0D2AD /* Manchkin.swift */,
 				0F8CC818205C72FD00B0D2AD /* Monster.swift */,
@@ -130,6 +140,7 @@
 		0F8CC82A205D190300B0D2AD /* PlayersMainScreenUserStory */ = {
 			isa = PBXGroup;
 			children = (
+				0F8CC835205D3A5D00B0D2AD /* PlayerViewCells */,
 				0F8CC82C205D19C000B0D2AD /* PlayersMainScreenViewController.swift */,
 			);
 			path = PlayersMainScreenUserStory;
@@ -149,6 +160,15 @@
 				0F8CC831205D1CBD00B0D2AD /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		0F8CC835205D3A5D00B0D2AD /* PlayerViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0F8CC836205D3B4300B0D2AD /* PlayerCollectionViewCell.swift */,
+				0F8CC837205D3B4300B0D2AD /* PlayerCollectionViewCell.xib */,
+			);
+			path = PlayerViewCells;
 			sourceTree = "<group>";
 		};
 		DADE2CFB205B32E8009E94E7 = {
@@ -243,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADE2D15205B32E9009E94E7 /* LaunchScreen.storyboard in Resources */,
+				0F8CC839205D3B4300B0D2AD /* PlayerCollectionViewCell.xib in Resources */,
 				DADE2D12205B32E9009E94E7 /* Assets.xcassets in Resources */,
 				DADE2D0D205B32E9009E94E7 /* Main.storyboard in Resources */,
 			);
@@ -260,14 +281,17 @@
 				0F8CC82D205D19C000B0D2AD /* PlayersMainScreenViewController.swift in Sources */,
 				0F8CC832205D1CBD00B0D2AD /* Utils.swift in Sources */,
 				0F8CC819205C72FD00B0D2AD /* Monster.swift in Sources */,
+				0F6179AE206663C600F87671 /* Promise.swift in Sources */,
 				DADE2D0A205B32E9009E94E7 /* FightViewController.swift in Sources */,
 				0F8CC829205D17FC00B0D2AD /* Storyboard.swift in Sources */,
 				DADE2D08205B32E9009E94E7 /* AppDelegate.swift in Sources */,
 				0F8CC815205C727700B0D2AD /* Player.swift in Sources */,
 				0F8CC81C205C733B00B0D2AD /* PlayerManager.swift in Sources */,
+				0F6179AC2065795800F87671 /* FlipStepper.swift in Sources */,
 				0F8CC823205D033400B0D2AD /* TransitionHandler.swift in Sources */,
 				DADE2D10205B32E9009E94E7 /* SimpleManchkinCounter.xcdatamodeld in Sources */,
 				0F8CC834205D256000B0D2AD /* UINavigationExtension.swift in Sources */,
+				0F8CC838205D3B4300B0D2AD /* PlayerCollectionViewCell.swift in Sources */,
 				0F8CC827205D054500B0D2AD /* ModuleConfigurable.swift in Sources */,
 				0F8CC820205D023E00B0D2AD /* StartScreenViewController.swift in Sources */,
 			);

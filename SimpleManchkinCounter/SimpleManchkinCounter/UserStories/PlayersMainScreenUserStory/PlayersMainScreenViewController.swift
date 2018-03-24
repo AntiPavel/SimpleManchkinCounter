@@ -15,7 +15,7 @@ class PlayersMainScreenViewController: UIViewController, TransitionHandler {
         let moduleId = ModuleId(storyboardId: Storyboard.Main.storyboardName,
                                 controllerId: Storyboard.Main.startScreenViewController.rawValue,
                                 transitionType: .pop)
-        self.openModule(with: moduleId) { _ in }
+        self.openModule(with: moduleId) { _ in } 
     }
     
     override func viewDidLoad() {
