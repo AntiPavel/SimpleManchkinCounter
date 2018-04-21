@@ -11,15 +11,9 @@ import Foundation
 protocol  Player {
     
     init(id: Int)
+    func clone() -> Player
     
-    func setName(name: String)
-    func getName() -> String
-    func getId() -> Int
-    func increaseLevel()
-    func decreaseLevel()
-    func increaseBonus()
-    func decreaseBonus()
-    func setCourse(coursed: Bool)
-    func getStreight() -> Int
-    func isCursed() -> Bool
+    var id: Int { get set }
+    var streight: Int { get }
+    var level: Int { get set }
 }

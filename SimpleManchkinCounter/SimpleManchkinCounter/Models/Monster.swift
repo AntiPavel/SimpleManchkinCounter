@@ -8,52 +8,21 @@
 
 import Foundation
 
-final class Monster: Player {
+final class Monster: Player {    
     
     public init(id: Int) {
         self.id = id
     }
     
-    func setName(name: String) {
-        storedName = name
+    func clone() -> Player {
+        let clone = Monster(id: id)
+        clone.level = level
+        return clone
     }
     
-    func getName() -> String {
-        return storedName
+    var id: Int
+    var level: Int = 0
+    var streight: Int {
+        get { return level }
     }
-    
-    func increaseLevel() {
-        level += 1
-    }
-    
-    func decreaseLevel() {
-        level -= 1
-    }
-    
-    func increaseBonus() {
-    }
-    
-    func decreaseBonus() {
-    }
-    
-    func setCourse(coursed: Bool) {
-    }
-    
-    func getStreight() -> Int {
-        return bonus + level
-    }
-    
-    func isCursed() -> Bool {
-        return isCursedNow
-    }
-    
-    func getId() -> Int {
-        return id
-    }
-    
-    private let id: Int
-    private var level: Int = 0
-    private let bonus: Int = 0
-    private let isCursedNow: Bool = false
-    private var storedName: String = "Monstr"
 }
