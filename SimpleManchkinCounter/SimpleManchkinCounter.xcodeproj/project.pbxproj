@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F4CB8B1208B68B400BEC0E4 /* PlayerFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8B0208B68B400BEC0E4 /* PlayerFabric.swift */; };
+		0F4CB8B5208BAB7000BEC0E4 /* NewPlayerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8B3208BAB7000BEC0E4 /* NewPlayerViewCell.swift */; };
+		0F4CB8B6208BAB7000BEC0E4 /* NewPlayerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4CB8B4208BAB7000BEC0E4 /* NewPlayerViewCell.xib */; };
+		0F4CB8B9208BACC900BEC0E4 /* StoredPlayerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8B7208BACC900BEC0E4 /* StoredPlayerViewCell.swift */; };
+		0F4CB8BA208BACC900BEC0E4 /* StoredPlayerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4CB8B8208BACC900BEC0E4 /* StoredPlayerViewCell.xib */; };
+		0F4CB8BC208BC34800BEC0E4 /* StartScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8BB208BC34800BEC0E4 /* StartScreenPresenter.swift */; };
+		0F4CB8BE208BC38200BEC0E4 /* StartScreenViewCellFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8BD208BC38200BEC0E4 /* StartScreenViewCellFabric.swift */; };
+		0F4CB8C2208BCC2800BEC0E4 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8C1208BCC2800BEC0E4 /* ConfigurableCell.swift */; };
+		0F4CB8C4208BD2DE00BEC0E4 /* NewPlayerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8C3208BD2DE00BEC0E4 /* NewPlayerCellViewModel.swift */; };
+		0F4CB8C6208C756C00BEC0E4 /* StoredPlayerViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4CB8C5208C756C00BEC0E4 /* StoredPlayerViewCellModel.swift */; };
 		0F6179AC2065795800F87671 /* FlipStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6179AB2065795800F87671 /* FlipStepper.swift */; };
 		0F6179AE206663C600F87671 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6179AD206663C600F87671 /* Promise.swift */; };
 		0F8CC815205C727700B0D2AD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CC814205C727700B0D2AD /* Player.swift */; };
@@ -34,6 +43,15 @@
 
 /* Begin PBXFileReference section */
 		0F4CB8B0208B68B400BEC0E4 /* PlayerFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFabric.swift; sourceTree = "<group>"; };
+		0F4CB8B3208BAB7000BEC0E4 /* NewPlayerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerViewCell.swift; sourceTree = "<group>"; };
+		0F4CB8B4208BAB7000BEC0E4 /* NewPlayerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPlayerViewCell.xib; sourceTree = "<group>"; };
+		0F4CB8B7208BACC900BEC0E4 /* StoredPlayerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredPlayerViewCell.swift; sourceTree = "<group>"; };
+		0F4CB8B8208BACC900BEC0E4 /* StoredPlayerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoredPlayerViewCell.xib; sourceTree = "<group>"; };
+		0F4CB8BB208BC34800BEC0E4 /* StartScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenPresenter.swift; sourceTree = "<group>"; };
+		0F4CB8BD208BC38200BEC0E4 /* StartScreenViewCellFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewCellFabric.swift; sourceTree = "<group>"; };
+		0F4CB8C1208BCC2800BEC0E4 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		0F4CB8C3208BD2DE00BEC0E4 /* NewPlayerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerCellViewModel.swift; sourceTree = "<group>"; };
+		0F4CB8C5208C756C00BEC0E4 /* StoredPlayerViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredPlayerViewCellModel.swift; sourceTree = "<group>"; };
 		0F6179AB2065795800F87671 /* FlipStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlipStepper.swift; path = SimpleManchkinCounter/Models/FlipStepper.swift; sourceTree = SOURCE_ROOT; };
 		0F6179AD206663C600F87671 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		0F8CC814205C727700B0D2AD /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -71,6 +89,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4CB8B2208BAAEE00BEC0E4 /* StartScreenViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0F4CB8B3208BAB7000BEC0E4 /* NewPlayerViewCell.swift */,
+				0F4CB8C3208BD2DE00BEC0E4 /* NewPlayerCellViewModel.swift */,
+				0F4CB8B4208BAB7000BEC0E4 /* NewPlayerViewCell.xib */,
+				0F4CB8B7208BACC900BEC0E4 /* StoredPlayerViewCell.swift */,
+				0F4CB8C5208C756C00BEC0E4 /* StoredPlayerViewCellModel.swift */,
+				0F4CB8B8208BACC900BEC0E4 /* StoredPlayerViewCell.xib */,
+			);
+			path = StartScreenViewCells;
+			sourceTree = "<group>";
+		};
+		0F4CB8C0208BCC0600BEC0E4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0F4CB8C1208BCC2800BEC0E4 /* ConfigurableCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0F8CC80C205C6DD800B0D2AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +162,10 @@
 		0F8CC81E205D01F600B0D2AD /* StartMenuUserStory */ = {
 			isa = PBXGroup;
 			children = (
+				0F4CB8B2208BAAEE00BEC0E4 /* StartScreenViewCells */,
 				0F8CC81F205D023D00B0D2AD /* StartScreenViewController.swift */,
+				0F4CB8BB208BC34800BEC0E4 /* StartScreenPresenter.swift */,
+				0F4CB8BD208BC38200BEC0E4 /* StartScreenViewCellFabric.swift */,
 			);
 			path = StartMenuUserStory;
 			sourceTree = "<group>";
@@ -193,6 +235,7 @@
 		DADE2D06205B32E9009E94E7 /* SimpleManchkinCounter */ = {
 			isa = PBXGroup;
 			children = (
+				0F4CB8C0208BCC0600BEC0E4 /* Common */,
 				0F8CC830205D1CA600B0D2AD /* Utils */,
 				0F8CC821205D032000B0D2AD /* Navigation */,
 				0F8CC81D205D01E000B0D2AD /* UserStories */,
@@ -265,9 +308,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4CB8B6208BAB7000BEC0E4 /* NewPlayerViewCell.xib in Resources */,
 				DADE2D15205B32E9009E94E7 /* LaunchScreen.storyboard in Resources */,
 				0F8CC839205D3B4300B0D2AD /* PlayerCollectionViewCell.xib in Resources */,
 				DADE2D12205B32E9009E94E7 /* Assets.xcassets in Resources */,
+				0F4CB8BA208BACC900BEC0E4 /* StoredPlayerViewCell.xib in Resources */,
 				DADE2D0D205B32E9009E94E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4CB8B5208BAB7000BEC0E4 /* NewPlayerViewCell.swift in Sources */,
 				0F8CC825205D051E00B0D2AD /* ModuleConfigurableProvider.swift in Sources */,
 				0F8CC817205C72EA00B0D2AD /* Manchkin.swift in Sources */,
 				0F8CC82D205D19C000B0D2AD /* PlayersMainScreenViewController.swift in Sources */,
@@ -287,16 +333,22 @@
 				0F6179AE206663C600F87671 /* Promise.swift in Sources */,
 				DADE2D0A205B32E9009E94E7 /* FightViewController.swift in Sources */,
 				0F8CC829205D17FC00B0D2AD /* Storyboard.swift in Sources */,
+				0F4CB8BC208BC34800BEC0E4 /* StartScreenPresenter.swift in Sources */,
 				0F4CB8B1208B68B400BEC0E4 /* PlayerFabric.swift in Sources */,
 				DADE2D08205B32E9009E94E7 /* AppDelegate.swift in Sources */,
 				0F8CC815205C727700B0D2AD /* Player.swift in Sources */,
 				0F8CC81C205C733B00B0D2AD /* PlayerManager.swift in Sources */,
 				0F6179AC2065795800F87671 /* FlipStepper.swift in Sources */,
+				0F4CB8C4208BD2DE00BEC0E4 /* NewPlayerCellViewModel.swift in Sources */,
+				0F4CB8C6208C756C00BEC0E4 /* StoredPlayerViewCellModel.swift in Sources */,
 				0F8CC823205D033400B0D2AD /* TransitionHandler.swift in Sources */,
+				0F4CB8B9208BACC900BEC0E4 /* StoredPlayerViewCell.swift in Sources */,
 				DADE2D10205B32E9009E94E7 /* SimpleManchkinCounter.xcdatamodeld in Sources */,
+				0F4CB8C2208BCC2800BEC0E4 /* ConfigurableCell.swift in Sources */,
 				0F8CC834205D256000B0D2AD /* UINavigationExtension.swift in Sources */,
 				0F8CC838205D3B4300B0D2AD /* PlayerCollectionViewCell.swift in Sources */,
 				0F8CC827205D054500B0D2AD /* ModuleConfigurable.swift in Sources */,
+				0F4CB8BE208BC38200BEC0E4 /* StartScreenViewCellFabric.swift in Sources */,
 				0F8CC820205D023E00B0D2AD /* StartScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

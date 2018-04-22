@@ -33,12 +33,14 @@ protocol PlayerManager {
     func isCursed(id: Int) -> Bool
     func getStoredManchkins() -> Array<Manchkin>
     func removeStoredManchkin(name: String)
+    
+    static var shared: PlayerManager { get }
 
 }
 
 final class SimplePlayerManager: PlayerManager {
     
-    static let shared: SimplePlayerManager = {
+    static let shared: PlayerManager = {
         let instance = SimplePlayerManager()
         instance.setup()
         return instance

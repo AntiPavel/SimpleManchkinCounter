@@ -9,14 +9,17 @@
 import UIKit
 import CoreData
 
+let mainBlueColor = UIColor(red: 201/256, green: 255/256, blue: 240/256, alpha: 1)
+var menuColor: UIColor!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        menuColor = mainBlueColor
         return true
     }
 
