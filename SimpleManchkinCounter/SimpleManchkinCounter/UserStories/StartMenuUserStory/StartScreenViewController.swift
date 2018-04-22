@@ -52,6 +52,7 @@ class StartScreenViewController: UIViewController, TransitionHandler, StartScree
         tableView.register(UINib(nibName: "StoredPlayerViewCell", bundle: nil), forCellReuseIdentifier: "StoredPlayerViewCell")
         tableView.register(UINib(nibName: "NewPlayerViewCell", bundle: nil), forCellReuseIdentifier: "NewPlayerViewCell")
         factory = StartScreenViewCellFabricImplementation()
+        hideKeyboardWhenTappedAround()
         
     }
     
@@ -78,7 +79,24 @@ class StartScreenViewController: UIViewController, TransitionHandler, StartScree
         super.viewWillAppear(true)
         update()
     }
+    
+    fileprivate func addNewPlayer() {
+        
+    }
+    
+    fileprivate func addManchkin(from: Int) {
+        
+    }
+    
+    private func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
 
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
 extension StartScreenViewController:  UITableViewDataSource {
@@ -107,6 +125,19 @@ extension StartScreenViewController:  UITableViewDataSource {
 
 extension StartScreenViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        let model = viewModels[row]
+        logD("StartScreenViewController", message: "didSelectRowAt indexPath.row : \(row)", logLevel: .verbose)
+        switch model  {
+        case _ as NewPlayerCellViewModel:
+            self.addNewPlayer()
+        case _ as StoredPlayerViewCellModel:
+            addManchkin(from: row)
+        default:
+            logD("StartScreenViewController", message: "Unknown CellViewModel tapped", logLevel: .verbose)
+        }
+    }
 }
 
 

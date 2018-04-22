@@ -30,19 +30,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQf-vQ-svj">
                                 <rect key="frame" x="2" y="2" width="446" height="36"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW PLAYER..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMX-IO-h36">
-                                        <rect key="frame" x="10" y="4" width="426" height="28"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="NEW PLAYER..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgN-s4-yFI">
+                                        <rect key="frame" x="10" y="0.0" width="426" height="36"/>
                                         <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="nameTextFieldIAction:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="NPf-6F-GYw"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="fMX-IO-h36" firstAttribute="top" secondItem="iQf-vQ-svj" secondAttribute="top" constant="4" id="HBf-ry-33c"/>
-                                    <constraint firstAttribute="trailing" secondItem="fMX-IO-h36" secondAttribute="trailing" constant="10" id="Q0b-0D-uUB"/>
-                                    <constraint firstItem="fMX-IO-h36" firstAttribute="leading" secondItem="iQf-vQ-svj" secondAttribute="leading" constant="10" id="gpy-Jq-0RP"/>
-                                    <constraint firstAttribute="bottom" secondItem="fMX-IO-h36" secondAttribute="bottom" constant="4" id="rHw-Lw-gnN"/>
+                                    <constraint firstItem="wgN-s4-yFI" firstAttribute="leading" secondItem="iQf-vQ-svj" secondAttribute="leading" constant="10" id="K1b-XW-9Ga"/>
+                                    <constraint firstItem="wgN-s4-yFI" firstAttribute="centerY" secondItem="iQf-vQ-svj" secondAttribute="centerY" id="hH0-52-ZCQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wgN-s4-yFI" secondAttribute="trailing" constant="10" id="jOX-Um-6KB"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -50,6 +52,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iQf-vQ-svj" secondAttribute="trailing" constant="2" id="Cjx-3h-Hjp"/>
                             <constraint firstAttribute="bottom" secondItem="iQf-vQ-svj" secondAttribute="bottom" constant="2" id="JZ2-eD-gDO"/>
+                            <constraint firstAttribute="height" constant="40" id="KND-1f-fiL"/>
                             <constraint firstItem="iQf-vQ-svj" firstAttribute="leading" secondItem="uXV-wh-qsh" secondAttribute="leading" constant="2" id="SWx-9F-kyI"/>
                             <constraint firstItem="iQf-vQ-svj" firstAttribute="top" secondItem="uXV-wh-qsh" secondAttribute="top" constant="2" id="h4q-hO-myj"/>
                         </constraints>
@@ -66,7 +69,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="frameBackgroundView" destination="uXV-wh-qsh" id="jEr-1m-5m1"/>
-                <outlet property="label" destination="fMX-IO-h36" id="QzO-wQ-z0h"/>
+                <outlet property="nameTextField" destination="wgN-s4-yFI" id="THZ-T3-UHq"/>
                 <outlet property="topBackgroundView" destination="iQf-vQ-svj" id="DS3-HD-IcZ"/>
             </connections>
         </tableViewCell>
