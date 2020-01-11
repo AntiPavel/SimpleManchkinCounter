@@ -173,7 +173,7 @@ final class SimplePlayerManager: PlayerManager {
         guard let array = UserDefaults.standard.array(forKey: storedPlayers) as? Array<[String: Any]>, array.count > 0 else {
             return [Manchkin]()
         }
-        let manchkins = array.flatMap(Manchkin.init(dict:))
+        let manchkins = array.compactMap(Manchkin.init(dict:))
         return manchkins
     }
     

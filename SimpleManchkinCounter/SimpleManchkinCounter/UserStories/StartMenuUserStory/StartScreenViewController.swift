@@ -57,10 +57,10 @@ class StartScreenViewController: UIViewController, TransitionHandler, StartScree
     }
     
     private func setupLabels() {
-        let titleStrokeTextAttributes: [NSAttributedStringKey : Any] = [
-            NSAttributedStringKey.strokeColor : UIColor.blue,
-            NSAttributedStringKey.foregroundColor : menuColor,
-            NSAttributedStringKey.strokeWidth : -2.0
+        let titleStrokeTextAttributes: [NSAttributedString.Key : Any] = [
+            NSAttributedString.Key.strokeColor : UIColor.blue,
+            NSAttributedString.Key.foregroundColor : menuColor,
+            NSAttributedString.Key.strokeWidth : -2.0
         ]
         titleLabel.attributedText = NSAttributedString(string: "MANCHKIN COUNTER", attributes: titleStrokeTextAttributes)
     }

@@ -170,8 +170,8 @@ class FlipStepper: UIControl {
     
     // Mark: layout
     public override func layoutSubviews() {
-        let centerX = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-        let centerY = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: -1)
+        let centerX = NSLayoutConstraint(item: label, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        let centerY = NSLayoutConstraint(item: label, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: -1)
         
         label.translatesAutoresizingMaskIntoConstraints = false
         label.sizeToFit()
@@ -181,7 +181,7 @@ class FlipStepper: UIControl {
     private func resizeToLongWidth() {
         constraints.first { $0.firstAnchor == widthAnchor }?.isActive = false
         self.frame.size.width = longWidth
-        let width = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: longWidth)
+        let width = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: longWidth)
         self.addConstraints([width])
         self.layoutIfNeeded()
         topImageView.frame.size.width = self.frame.size.width
@@ -192,7 +192,7 @@ class FlipStepper: UIControl {
     private func resizeToShortWidth() {
         guard let originalWidth = originalWidth else { return }
         self.frame.size.width = originalWidth
-        let width = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: originalWidth)
+        let width = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: originalWidth)
         self.addConstraints([width])
         self.layoutIfNeeded()
         topImageView.frame.size.width = self.frame.size.width

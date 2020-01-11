@@ -34,15 +34,15 @@ class FightViewController: UIViewController, TransitionHandler {
     
     private func setupLabels() {
         
-         let strenghtStrokeTextAttributes: [NSAttributedStringKey : Any] = [
-           NSAttributedStringKey.strokeColor : UIColor(red: 235/256, green: 210/256, blue: 189/256, alpha: 1),
-           NSAttributedStringKey.foregroundColor : UIColor(red: 142/256, green: 30/256, blue: 44/256, alpha: 1),
-            NSAttributedStringKey.strokeWidth : -2.0
+         let strenghtStrokeTextAttributes: [NSAttributedString.Key : Any] = [
+           NSAttributedString.Key.strokeColor : UIColor(red: 235/256, green: 210/256, blue: 189/256, alpha: 1),
+           NSAttributedString.Key.foregroundColor : UIColor(red: 142/256, green: 30/256, blue: 44/256, alpha: 1),
+            NSAttributedString.Key.strokeWidth : -2.0
            ]
-        let titlesStrokeTextAttributes: [NSAttributedStringKey : Any] = [
-            NSAttributedStringKey.strokeColor : UIColor.black,
-            NSAttributedStringKey.foregroundColor : UIColor(red: 235/256, green: 210/256, blue: 189/256, alpha: 1),
-            NSAttributedStringKey.strokeWidth : -2.0
+        let titlesStrokeTextAttributes: [NSAttributedString.Key : Any] = [
+            NSAttributedString.Key.strokeColor : UIColor.black,
+            NSAttributedString.Key.foregroundColor : UIColor(red: 235/256, green: 210/256, blue: 189/256, alpha: 1),
+            NSAttributedString.Key.strokeWidth : -2.0
         ]
         
 //        let strenghtStrokeTextAttributes = [NSStrokeColorAttributeName : UIColor(colorLiteralRed: 235/256, green: 210/256, blue: 189/256, alpha: 1), NSForegroundColorAttributeName : UIColor(colorLiteralRed: 142/256, green: 30/256, blue: 44/256, alpha: 1), NSStrokeWidthAttributeName : -2.0, ] as [String : Any]

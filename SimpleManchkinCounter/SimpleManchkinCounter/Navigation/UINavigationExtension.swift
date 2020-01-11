@@ -18,18 +18,18 @@ public extension UINavigationController {
     func popLikeModal() {
         let transition = CATransition()
         transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionReveal
-        transition.subtype = kCATransitionFromTop
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.reveal
+        transition.subtype = CATransitionSubtype.fromTop
         self.view.layer.add(transition, forKey: nil)
         self.popViewController(animated: false)
     }
     func popLikeBackModal() {
         let transition = CATransition()
         transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionReveal
-        transition.subtype = kCATransitionFromBottom
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.reveal
+        transition.subtype = CATransitionSubtype.fromBottom
         self.view.layer.add(transition, forKey: nil)
         self.popViewController(animated: false)
     }
@@ -41,9 +41,9 @@ public extension UINavigationController {
     func pushLikeModal(viewController vc: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = kCATransitionMoveIn
-        transition.subtype = kCATransitionFromTop
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromTop
         self.view.layer.add(transition, forKey: nil)
         self.pushViewController(vc, animated: false)
     }
@@ -54,12 +54,22 @@ public extension UINavigationController {
      - parameter type:     transition animation type.
      - parameter duration: transition animation duration.
      */
-    private func addTransition(transitionType type: String = kCATransitionFade, duration: CFTimeInterval = 0.3) {
+    private func addTransition(transitionType type: String = convertFromCATransitionType(CATransitionType.fade), duration: CFTimeInterval = 0.3) {
         let transition = CATransition()
         transition.duration = duration
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        transition.type = type
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = convertToCATransitionType(type)
         self.view.layer.add(transition, forKey: nil)
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromCATransitionType(_ input: CATransitionType) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
+	return CATransitionType(rawValue: input)
 }

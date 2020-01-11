@@ -11,7 +11,7 @@ import Foundation
 protocol StartScreenPresenter {
     
     func viewIsReady()
-    weak var view: StartScreenViewController! { get set }
+    var view: StartScreenViewController! { get set }
 }
 
 class StartScreenPresenterImplementation: StartScreenPresenter {
